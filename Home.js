@@ -27,7 +27,7 @@ export default class HomeScreen extends Component {
                         style={styles.backgroundImage}> 
                 */}
                 <ImageBackground 
-                        source={require('../assets/stars.gif')} 
+                        source={require('./stars.gif')} 
                         style={styles.backgroundImage}> 
                 
                 {/* <BackgroundImage
@@ -57,21 +57,21 @@ export default class HomeScreen extends Component {
                         this.props.navigation.navigate("SpaceCraft")
                     }>                    
                         <Text style={styles.routeText}>Naves Espaciales</Text>
-                        <Image source={require("../assets/space_crafts.png")} style={styles.routeImage}></Image>
+                        <Image source={require("./space_crafts.png")} style={styles.routeImage}></Image>
                     </TouchableOpacity>
 
                     <TouchableOpacity style={styles.routeCard} onPress={() =>
                         this.props.navigation.navigate("StarMap")
                     }>
                         <Text style={styles.routeText}>Mapa estelar</Text>
-                        <Image source={require("../assets/star_map.png")} style={styles.routeImage}></Image>
+                        <Image source={require("./star_map.png")} style={styles.routeImage}></Image>
                     </TouchableOpacity>
 
                     <TouchableOpacity style={styles.routeCard} onPress={() =>
                         this.props.navigation.navigate("DailyPic")
                     }>
                         <Text style={styles.routeText}>Fotos diarias</Text>
-                        <Image source={require("../assets/daily_pictures.png")} style={styles.routeImage}></Image>
+                        <Image source={require("./daily_pictures.png")} style={styles.routeImage}></Image>
                     </TouchableOpacity>
                 </ImageBackground>
             </View>
